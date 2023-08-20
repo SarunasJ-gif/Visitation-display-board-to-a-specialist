@@ -20,7 +20,7 @@ public class SpecialistEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true, updatable = false)
     private String username;
     private String password;
     @ElementCollection(targetClass = Role.class)
