@@ -92,7 +92,7 @@ The application provides the following REST API endpoints:
 1. Create a new visitation:
 - Endpoint: `POST /client/board/{specialistId}`
 - Description: the endpoint is intended for the customer to create a new appointment with a specialist
-  whose id (specialistId) is specified. The visit number and time are generated. No need to authenticate.
+  whose id (specialistId) is specified. The visit number and time are generated. No authentication required.
 
 
 - Response: Status: 200 OK
@@ -111,7 +111,7 @@ The application provides the following REST API endpoints:
 ```
 
 2. Check the visit time:
-- Description: The customer can check the time of his visit. A visit id is required. No need to authenticate.
+- Description: The customer can check the time of his visit. A visit id is required. No authentication required.
 - Endpoint: `GET /client/board/visit-time/{id}`
 - Response: Status: 200 OK
 -Body:
@@ -330,13 +330,13 @@ The application provides the following REST API endpoints:
       "id": 1,
       "visitNumber": 1,
       "time": "2023-08-20 14:55:10",
-      "isActive": true,
+      "isActive": false,
       "isFinished": false,
       "specialistFirstName": "Sarunas",
       "specialistLastName": "Jurevicius"
     }
     ],
-      "isBusy": null
+      "isBusy": false
 }
 ```
 
@@ -374,7 +374,7 @@ The application provides the following REST API endpoints:
   "firstName": "Jonas",
   "lastName": "Baptistas",
   "clients": [],
-  "isBusy": null
+  "isBusy": false
 }
 ```
 
@@ -407,7 +407,7 @@ The application provides the following REST API endpoints:
         "specialistLastName": "Jurevicius"
       }
       ],
-          "isBusy": false
+          "isBusy": true
   },
   {
     "id": 2,
