@@ -301,12 +301,12 @@ The application provides the following REST API endpoints:
 
 ```
 {
-  "username": "Sarunas",
+  "username": "SarunasJ",
   "password": "password",
   "roles": [
     "ADMIN"
   ],
-  "email": "sarunas@mail.com",
+  "email": "sarunasj@mail.com",
   "firstName": "Sarunas",
   "lastName": "Jurevicius"
 }
@@ -318,11 +318,11 @@ The application provides the following REST API endpoints:
 ```
 {
   "id": 1,
-  "username": "Sarunas",
+  "username": "SarunasJ",
   "roles": [
     "ADMIN"
   ],
-  "email": "sarunas@mail.com",
+  "email": "sarunasj@mail.com",
   "firstName": "Sarunas",
   "lastName": "Jurevicius",
   "clients": [
