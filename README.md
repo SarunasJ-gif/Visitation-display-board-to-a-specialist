@@ -274,7 +274,7 @@ The application provides the following REST API endpoints:
 8. Login to the system:
 - Description: Connecting to the system as a specialist or administrator.
   One default administrator has been created, username: "SarunasJ", password: "password".
-- Endpoint: `POST /sesion`
+- Endpoint: `POST /session`
 - Request body:
 
 ```
@@ -389,7 +389,7 @@ The application provides the following REST API endpoints:
 [
   {
     "id": 1,
-    "username": "Sarunas",
+    "username": "SarunasJ",
     "roles": [
       "ADMIN"
     ],
@@ -415,7 +415,7 @@ The application provides the following REST API endpoints:
     "roles": [
       "SPECIALIST"
     ],
-    "email": "jonasB@mail.com",
+    "email": "jonas@mail.com",
     "firstName": "Jonas",
     "lastName": "Baptistas",
     "clients": [],
@@ -439,7 +439,7 @@ The application provides the following REST API endpoints:
     "roles": [
       "SPECIALIST"
     ],
-    "email": "jonasB@mail.com",
+    "email": "jonas@mail.com",
     "firstName": "Jonas",
     "lastName": "Baptistas",
     "clients": [],
